@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .navbar{
+        box-shadow:4px 4px 6px 0 rgb(0, 115, 187/4%);
+        position: fixed;
+        display:flex;
+        width: 100%;
+        line-height: 90px;
+        height: 100px;
+            background-color: white;
+            overflow: hidden;
+    }
+.nav-link{
+    color: #58595B;
+    padding: 25px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-link1{
+    float: right;
+    color:#A7A9AC;
+    padding: 25px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+   .first-half h1{
+    background: transparent;
+    font-size: 65px;
+    line-height: 65px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333
+    
+}
+.first-half {
+    height: 600px;
+     padding: 200px 150px;
+     width:50%;
+     float: left;
+  
+}
+.img{
+padding-top: 200px;
+}
+.flex{
+    padding: 60px;
+ 
+    font-weight: bold;
+    width: 100%;
+    overflow: auto;
+}
+.flex-container{
+    display:flex;
+    flex-direction:row;
+}
+.flex ul {
+    padding-left: 100px;
+    background-origin:content-box;
+    box-sizing: border-box;
+    height: 120px;
+    line-height: 80px;
+    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+
+.flex ul li {
+    padding-left: 100px;
+  float: left;
+  width: 200;
+}
+
+
+.flex ul li h4{
+    color: #000000;
+    background: #F2F7FB;
+    font-weight: bold;
+    padding: 30px;
+    margin: 0px 20px 0px 0px;
+}
+.active, .flex ul li:hover {
+    background: 2bab0d;
+    border-radius: 3px;
+
+}
+.container .row .column{
+    justify-content: space-evenly;
+  column-gap: 10px;
+  column-count: 0;
+  grid-column-gap: 10px;
+  column-width: 70%;
+
+}
+.container .row .column h1{
+    font-size: 46px;
+    color: #333333;
+}
+.container .row .column h6{
+    color:#373737;
+    font-size: 18px;
+    padding: 6px 0px 0px;
+}
+.Button{
+    background-color: white;
+    border-radius: 1;
+  color:#D62049;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+ .put{
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+    background: #f4f4f4;
+    border:#ccc solid 2px;
+    margin:60px;
+    padding:10px;
+    text-align:center;
+    border-radius:200px;
+    width:200px;
+}
+.paragraph {
+  text-align: center;
+    color:#000000;
+    font-size: 18px;
+}
+.paragraph button{
+    background-color: red;
+    border-radius: 2;
+  color:#D62049;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.fast .row .column h4{
+    font-size: 56px;
+    color: #000000;
+}
+.fast .row .column p{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #373737;
+  margin:20px 0px 0px;
+}
+.fast .row .column img{
+  float: left;
+  padding-right: 10px;
+}
+.fast .row .column h6{
+    font-size: 18px;
+    color:#000000;
+}
+.fast .row .column p1{
+  font-size: 18px;
+  margin: 10px 0px 20px;
+  color: #A7A9AC;
+  padding-bottom: 30px;
+}
+.fast .row .column .row h5{
+  padding-left: 100px;
+  font-size: 24px;
+   text-align: center;
+   color: #0073BB;
+}
+.fast .row .column a{
+   font-size: 24px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #000000;
+}
+.percent .row img{
+  float: inline-start;
+    padding-left:0px;
+    padding-right: 0px;
+}
+.percent .row .h1{
+   text-align: center;
+    font-size: 48px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333333;
+}
+
+.percent .row .column{
+    color: #000000;
+    padding: 0px 84px;
+     text-align: center;
+     font-size: 18px;
+}
+.side .row img{
+   padding: 0px;
+}
+.side .row h1{
+  font-size: 48px;
+  color: #000000;
+}
+  
+
+.three .row .column{
+  padding-left: 50px;
+}
+.three .row h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: bolder;
+  font-display: bolder;
+  font-size: 28px;
+  color: #000000;
+}
+.three .row .column{
+  font-size: 18px;
+  color: #333333;
+}
+.two .row .column{
+   padding:20px;
+}
+.two .row .column img{
+  
+  float: left;
+  padding-right: 2px;
+}
+.two .row .column h4{
+     font-size: 28px;
+}
+.two .row .column p{
+    font-size: 18px;
+}
+.spin .row .column{
+     width:400px;
+    padding:10px;
+}
+.spin .row .column h2{
+  font-size: 24px;
+  margin: 0px 0px 0px 14px;
+}
+.spin .row .column li{
+  color: #333333;
+  font: 18px;
+  margin: 0px 0px 0px 14px;
+
+}
+.hp .row{
+  column-gap: 10px;
+}
+.hp .row .column{
+  flex:right;
+  width:400px; 
+  float: left;
+  padding:10px;
+}
+.hp .row .column img{
+   width: 30px;
+}
+.hp .row .column h2{
+    
+    font-size: 24px;
+  margin: 0px 0px 0px 14px;
+}
+.hp .row .column li{
+  color: #333333;
+  font: 40px;
+  margin: 0px 0px 0px 14px;
+
+}
+.hp .row .column h6{
+  font-size: 50px;
+  font: x-large;
+}
+
+.num .row .column{
+  padding: 20px;
+}
+.num .row .column h4{
+      font-size: 30px;
+      color: #0073BB;
+}
+.num .row .column p{
+  font-size: 18px;
+  color:18px;
+  margin:10px 0px 20px;
+}
+
+.contain .row .column{
+  padding:10px;
+  padding-left: 10px;
+}
+.contain .row{
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 30px;
+  width:150%
+}
+.vertical-line{
+        display: block;
+        border-left: 1px solid #ccc;
+        margin: 0 10px;
+        height: 650px;
+    }
+    .small{
+      text-align: center;
+    }
+    .beware{
+      border: 1px solid rebeccapurple;
+      padding-left: 30px;
+    }
+    .bar{
+      width: 150px;
+      height:120px;
+      line-height: 120px;
+    }
+    .last{
+      float:right;
+      padding-left: 0px;
+    }
+</style>
+</head>
+<body>
+    <header>
+<nav class="navbar navbar-expand-sm bg-white navbar-light justify-content-left">
+
+  <a class="navbar-brand" href="#"><img src="/logo.jpg" width="180" height="180px" class="float-left"></a>
+  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><b>Plans</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><b>Calculators</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><b>Customer service</b></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#"><b>Where do</b> <strong>I?</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Buy online</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Contact us</b></a>
+      </li>
+          <li class="nav-item" class="float-right">
+           <a class="nav-link1" href="#"><b>About us</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="#"><b>Careers</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link1" href="#"><b>Knowledge centre</b></a>
+          </li> 
+          <li>
+              <a class="nav-link1" href="#"><i class="fa fa-search fa-lg"></i></a>
+          </li>
+          <li>
+            <a class="nav-link1"  href="#"><i class="fa fa-user-o fa-lg"></i></a>
+        </li>
+        </ul>           
+</nav>
+</header>
+
+<div class="first-half"> 
+    <h1><b>Connect<br> with us</b></h1> 
+    <p><span style="font-size: 18px;">At Tata AIA Life Insurance, we strive to provide you with the best service and support throughout<u>&nbsp;</u>your insurance journey with us. We use a wide range of convenient contact touchpoints &amp; digital support features to help you reach us anytime and from anywhere.</span></p> 
+    <p><span style="font-size: 18px;">If you have any queries, or if you are in need of any help, we are here to help you every step of the way. Please feel free to contact us through our online or offline touchpoints.</span></p> 
+   </div>
+   <div class="img">
+    <img src="ContactUs.png">
+    </div><br>
+   <div class="flex">
+       <ul>
+     <li class="active"><a href="#"><h4>Connect<br> with us</h4></a></li>
+       <li><a href="#"><h4>Locate branch</h4></a></li>
+       <li><a href="#"><h4>Give<br> feedback</h4></a></li>
+      </ul>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <img src="/choose1.svg" width="50px"><br>
+            <h1><b>99.06%</b></h1>
+            <h6>Claim settlement<br>ratio</h6>
+            <a href="#" class="Button">Register claim</a>
+        </div><br>
+        <div class="column">
+            <img src="/choose4.svg" width="50px">
+            <h1><b>6 mins</b></h1>
+            <h6>To pay premium<br>securely</h6>
+            <a href="#" class="Button">Pay Now</a>
+        </div>
+    <div class="column">
+      <ul>
+    <li class="put"><a href="#">Get premium details ></a></li>
+    <li class="put"><a href="#">Update contact details ></a></li>
+    <li class="put"><a href="#">Update NEFT details ></a></li>
+    <li class="put"><a href="#">Raise a request ></a></li>
+  </ul>
+</div>
+              </div>
+  
+<div class="paragraph">
+    <p> Or <strong>I</strong> wish to login to my online policy account <a href="#" class="button"> Login</a> </p>
+</div><br>
+   <div class="fast">
+     <div class="row">
+       <div class="column">
+         <h1><b>Stay<br>updated</b></h1>
+         <p>(Get all the policy-related<br>
+          communication through WhatsApp)          
+          </p><br>
+       </div>
+       <div class="column">
+         <img src="whats.jpg" width="50px" class="rounded-circle">
+        <h6><b>WhatsApp</b></h6>
+        <p1>Application & policy-related queries</p1><br>
+        <div class="row">
+         <h5><u>70455669966</u></h5>
+        </div>
+         <a href="#">If you want to receive WhatsApp communication, Click here   ></a>
+      </div>
+     </div>
+   </div>
+
+   <div class="percent">
+     <div class="row">
+       <img src="percent.svg" width="45px">
+       <h1><b>85%</b></h1><br>
+       <br><hr>
+       <div class="row">
+         <div class="column">
+           <p>transactions are done by customers through<br>
+        the self-service digital channels</p>
+        </div>
+        </div>
+     </div>
+     <div class="side">
+       <div class="row">
+         <img src="size.svg" width="45px">
+         <h1>For more information, send an SMS to 5676799</h1>
+       </div>
+     </div>
+
+   </div>
+   <div class="spin">
+     <div class="row">
+       <div class="column">
+         <img src="checklist.svg" width="40px" height="40px">
+         <h2> Policy serving forms</h2>
+         <ul>
+           <li>Service Type</li>
+           <li><b>Policy<br>Information</b></li>
+           <li>SMS</li>
+           <li><b>POL  space 10 digit policy no</b></li>
+         </ul>
+
+       </div>
+       <div class="column">
+        <img src="update.svg" width="40px" height="40px">
+        <h2>Update personal details</h2>
+        <ul>
+          <li>Service Type</li>
+          <li><b>PAN</b></li>
+          </ul>
+       </div>
+     </div>
+   </div>
+   <div class="hp">
+   <div class="row">
+    <div class="column">
+      <img src="statement.svg" width="40px" height="40px">
+      <h2>Statement</h2>
+      <ul>
+        <li>Service Type</li>
+        <li><h6><b>Premium certificate</b></h6></li>
+        <li>SMS</li>
+        <li><h6><b>PCT <space> 10 digit policy no.umber <space> email ID (optional)
+          (in case you wish to receive the certificate by email; otherwise, it will be sent to your communication address) <space> financial year (yyyy–yyyy format)</b></h6></li>
+      </ul>
+
+    </div>
+    <div class="column">
+     <img src="others.svg" width="40px" height="40px">
+     <h2>Others</h2>
+     <ul>
+       <li>Service Type</li>
+       <li><h6><b>Premium certificate</b></h6></li>
+       <li>SMS</li>
+       <li><h6><b>PCT <space> 10 digit policy no.umber <space> email<br>ID (optional)<br>(in case you wish to receive the certificate by email;<br>otherwise, it will be sent to your communication<br>address) <space> financial year (yyyy–yyyy format)</b></h6></li>
+       </ul>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="help.svg" width="40px" height="40px">
+      <h2>Help</h2>
+      <ul>
+        <li>Service Type</li>
+        <li><b>Premium certificate</b></li>
+        <li>SMS</li>
+        <li><h6><b>To get the list of SMS shortcodes, please send HELP to 5676799 Summary of all short codes within 2 min</b></h6></li>
+      </ul>
+
+
+
+<div class="three">
+  <div class="row">
+    <h4><b>Write to us</b></h4><br>
+  </div>
+  <div class="row">
+    <p> We'd br happy to hear from you!</p>
+  </div>
+  <div class="row">
+    <h4><b>Raise a complaint?</b></h4><br>
+  </div>
+  <div class="row">
+    <p> Write your grievance and we'll respond to your concern</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="two">
+  <div class="row">
+    <div class="column">
+  <img src="call.svg" width="35px" class="rounded-circle">
+  <h4><b>Call us</b></h4>
+  <p>For any urgent assistance please contact us on</p>
+  </div>
+  <div class="column">
+    <img src="mail.svg" width="35px" class="rounded-circle">
+    <h4><b>Mail us</b></h4>
+    <p>For any urgent assistance please contact us on</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="num">
+  <div class="row">
+    <div class="column">
+      <h4>1-860-266 -9966</h4>
+      <p>Mon-Sat | 10am-7pm IST</p>
+    </div>
+    <div class="column">
+      <h4>080-67603700</h4>
+      <p>Outside India | Charges apply</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+<footer>
+  <div class="contain">
+    <div class="row">
+      <div class="column">
+        <h6>Plans</h6>
+        <h6>About us</h6>
+        <h6>My Policy</h6>
+      </div>
+      <span class="vertical-line"></span>
+       <div class="column">
+         <h6>Download centre</h6>
+         <h6>Company links</h6>
+         <p>Tata AIG General Insurance<br>Company Ltd</p>
+         <p>Tata Mutual Fund</p>
+         <p>Tata Capital</p> 
+         <p>Whistle Blower Registration<br>Form</p>        
+       </div>
+       <span class="vertical-line"></span>
+       <div class="column">
+         <h6>Disclaimers & policies</h6>
+         <p>Terms of use</p>
+         <p>Privacy policy</p>
+         <p>Nomination and Remuneration Policy</p>
+         <p>Policy against sexual harassment at work</p>
+         <p>CSR policy</p>
+         <p>Whistle blower policy</p>
+         <p>Group pension fund</p>
+         <p>Anti fraud policy</p>
+         <p>IRDA notifications</p>
+         <p>Public discloures</p>
+         <p>Coropate Disclosure</p>
+         <p>Disclaimers</p>
+         <p>Insurance coverage to Persons with Disability<br>
+           and Mental Iiiness</p>
+         <p>Insurance coverage to people affected by<br>HIV/AIDS</p>
+         <p>AML Framework</p>
+     </div>
+     <span class="vertical-line"></span>
+     <div class="column">
+       <h6>Others</h6>
+       <p>ISO documentation</p>
+       <p>Code of conduct</p>
+       <p>Code of conduct for vendors(TBC)</p>
+       <p>Life insurance council<br>
+         (www.sabsepehlelifeinsurance.com)</p>
+       <p>Insurance ombudsman</p>
+       <p>Consumer education</p>
+       <p>Benefit illustration</p>
+       <p>Greviance redressal</p>
+       <p>Know Your Advisor</p>
+       <p>V-Academy</p>
+       <p>Simplified Claims Process for Flood/Cyclone & 
+         Kerala<br> Airplane Crash Victims</p>
+     <p>Stewardship</p>
+     <p>Sitemap</p>
+     <p>Sales Tracker</p>
+     </div>
+    </div>
+    </div>
+    <hr>
+<div class="small">
+  <p>Registered with Insurance Regulatory & Development Authority Of India (IRDAI)
+     under the following Address and Registration Number:Tata AIA Life Insurance 
+     Company Ltd.(IRDAI Regn. No. 110)</p>
+     <p>Registered & Corporate Office Address: 14th Floor, Tower A, Peninsula
+        Business Park, Senapati Bapat Marg, Lower Parel, Mumbai 400013 , 
+        Board-Line - 022-6649 8000 (local Charges Apply).</p>
+        <p>Tata AIA Life Insurance Company Limited (Tata AIA Life) is a joint
+           venture company, formed by Tata Sons and AIA Group Limited (AIA). 
+           CIN: U66010MH2000PLC128403</p>
+     <p>*Tax benefits are as per Income Tax Act, 1961, and are subject to modifications
+        made thereto from time to time.Trade logo displayed above belongs to Tata Sons Ltd and AIA Group Ltd. 
+        and is used by Tata AIA Life Insurance Company Ltd under<br>a license. For any information including cancellation, 
+        claims and complaints, please contact our Insurance Advisor / Intermediary or visit Tata AIA Life's nearest branch 
+        office or call 1-860-266-9966 (local charges apply) or write to us at<br>
+        customercare@tataaia.com. Visit us at: www.tataaia.com or SMS 'LIFE' to 58888.</p>
+      <p>L&C/Advt/2016/Jan/019</p>
+      </div>
+      <div class="beware">
+        <h4>BEWARE OF SPURIOUS/FRAUD PHONE CALLS</h4>
+         <p>IRDAI is not involved in activities like selling insurance policies, announcing bonus or investment of premiums.
+            Public receiving such phone calls are requested to lodge a police complaint.</p>
+      </div>
+      <navbar class="bar">
+        <div class="image">
+          <img src="fb.jfif" width="70px" height="50px">
+          <img src="twitter.jfif" width="50px" height="50px">
+          <img src="in.jfif" width="50px" height="50px">
+          <img src="insta.jfif" width="50px" height="50px">
+          <img src="you.jfif" width="50px" height="50px">
+       
+        <div class="last">
+           <p>Tata AIA Insurance &copy; 2021.All Right Reserved.</p>
+            </div>
+          </div>
+      </navbar>
+
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
